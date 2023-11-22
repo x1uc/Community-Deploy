@@ -1,0 +1,66 @@
+version: '3'
+services:
+
+  forum:
+    image: forum:2.3
+    depends_on:
+      - myredis
+      - forum_mysql
+      - rabbitmq
+      - nginx
+    container_name: forum
+    restart: always
+    networks:
+      - forum
+
+  myredis:
+    image: redis
+    container_name: myredis
+    volumes:
+      - ./redis:/usr/local/etc/redis
+    command: redis-server /usr/local/etc/redis/redis.conf
+    restart: always
+    networks:
+      - forum
+
+  forum_mysql:
+    image: mysql:5.7.44
+    container_name: forum_mysql
+    networks:
+      - forum
+    volumes:
+      - ./forum_mysql:/docker-entrypoint-initdb.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: lxc123456
+    restart: always
+
+  rabbitmq:
+    container_name: mq
+    image: rabbitmq:management
+    networks:
+      - forum
+    environment:
+      RABBITMQ_DEFAULT_USER: root
+      RABBITMQ_DEFAULT_PASS: 123123
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    networks:
+      - forum
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./forum/conf/nginx.conf:/etc/nginx/nginx.conf
+      - ./forum/logs:/var/log/nginx
+      - ./forum/html:/usr/share/nginx/html
+    restart: always
+
+networks:
+  forum:
+    name: forum
+
