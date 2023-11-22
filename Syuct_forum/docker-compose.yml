@@ -2,7 +2,7 @@ version: '3'
 services:
 
   forum:
-    image: forum:2.3
+    image: registry.cn-beijing.aliyuncs.com/acm-community/syuct:1.0
     depends_on:
       - myredis
       - forum_mysql
