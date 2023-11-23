@@ -44,7 +44,7 @@ Docker 一键部署Community 项目(Docker的安装会因操作系统的不同�
 - 拉取github仓库: ```https://github.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum```
 - 拉取gitee仓库:  ```https://gitee.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum```
 
-###开启服务
+### 开启服务
 ```
 docker compose up
 ```
