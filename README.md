@@ -1,3 +1,5 @@
+简体中文|[English](https://github.com/x1uc/Community-Deploy/blob/main/README.en.md)
+
 # Community
 Docker 一键部署Community 项目
 ## 项目源码
