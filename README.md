@@ -1,8 +1,7 @@
 简体中文 | [English](https://github.com/x1uc/Community-Deploy/blob/main/README.en.md)
 
 # Community
-Docker的安装会因操作系统的不同而略有不同
-Docker 一键部署Community 项目
+Docker 一键部署Community 项目(Docker的安装会因操作系统的不同而略有不同)
 ## 项目源码
 - 项目前端地址: [Community-Front](https://github.com/x1uc/Community-front)
 - 项目前端地址: [Community-backend](https://github.com/x1uc/Community-backend)
