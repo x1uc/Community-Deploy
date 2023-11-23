@@ -42,8 +42,8 @@ Docker 一键部署Community 项目
   ```
 ### 拉取dockercompose.yml 以及 相关配置
 下面两行命令选择一个执行就可以，国内使用下面的命令可能更快
-- 拉取github仓库: https://github.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum
-- 拉取gitee仓库:  https://gitee.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum
+- 拉取github仓库: ```https://github.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum```
+- 拉取gitee仓库:  ```https://gitee.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum```
 
 ###开启服务
 ```
