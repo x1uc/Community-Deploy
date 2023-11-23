@@ -1,6 +1,7 @@
-简体中文|[English](https://github.com/x1uc/Community-Deploy/blob/main/README.en.md)
+简体中文 | [English](https://github.com/x1uc/Community-Deploy/blob/main/README.en.md)
 
 # Community
+Docker的安装会因操作系统的不同而略有不同
 Docker 一键部署Community 项目
 ## 项目源码
 - 项目前端地址: [Community-Front](https://github.com/x1uc/Community-front)
@@ -40,6 +41,7 @@ Docker 一键部署Community 项目
   docker run hello-world  #测试
   ```
 ### 拉取dockercompose.yml 以及 相关配置
+下面两行命令选择一个执行就可以，国内使用下面的命令可能更快
 - 拉取github仓库: https://github.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum
 - 拉取gitee仓库:  https://gitee.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum
 
@@ -48,7 +50,7 @@ Docker 一键部署Community 项目
 docker compose up
 ```
 
-不同系统进行部署可能有细微不同
+
 
 
 
