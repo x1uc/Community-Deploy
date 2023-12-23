@@ -40,7 +40,7 @@ If you are in China please use the following, it can guarantee your download spe
 - pull github repository: ```https://github.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum```
 - pull gitee repository:  ```https://gitee.com/x1uc/Community-Deploy.git && cd Community-Deploy && cd Syuct_forum```
 
-###start service
+### start service
 ```
 docker compose up
 ```
